@@ -10,6 +10,19 @@ angular.module("todoApp")
     console.log(todo.value);
   };
   this.saveTodo = function(todo){
-    console.log(todo.value);
+    $.ajax({
+      type: "POST",
+      url: 'mock/todos.json',
+      data: JSON.stringify({"value": todo.value}),
+      success: function (json) {
+                alert('Success');
+                return true;
+            },
+      error: function(err) {
+        alert('failed');
+        console.log(err);
+      },
+      dataType: 'json'
+    });
   };
 });
