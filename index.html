@@ -2,8 +2,22 @@
 <html>
 <head>
   <title>To do | list</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+  <link href="styles/main.css" rel="stylesheet" type="text/css" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+<body ng-app="todoApp">
+  <h1>My TODO List</h1>
+  <div ng-controller="mainCtrl" class="list">
+    <div class="add">
+      <a href="" ng-click="addTodo()">+ Add new task</a>
+    </div>
+    <todos></todos>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script src="scripts/app.js" type="text/javascript"></script>
+  <script src="scripts/controllers/main.js" type="text/javascript"></script>
+  <script src="scripts/services/data.js" type="text/javascript"></script>
+  <script src="scripts/directives/todos.js" type="text/javascript"></script>
 </body>
 </html>
