@@ -1,6 +1,6 @@
 # [TODO](http://agenda.bitballoon.com/)
 
-<img src="http://i.imgur.com/undefined.png" width=600px />
+<img src="http://i.imgur.com/alWazZF.jpg" width=600px />
 
 ## About
 
